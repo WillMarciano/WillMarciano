@@ -9,6 +9,7 @@
   <a href="https://app.daily.dev/willmarciano"><img src="https://api.daily.dev/devcards/25ea7edb97d64df2abf040a8c620db53.png?r=0u8" width="200" alt="Willian Marciano's Dev Card"/></a>
   </td>
   <td>
+   Ferramentas e Tecnologias
   </td>
  </tr>
 </table>
