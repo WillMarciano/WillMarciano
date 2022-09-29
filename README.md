@@ -3,6 +3,8 @@
 - 🔭 Desenvolvedor Back-end
 - 📫 Contato através do E-mail: willian_marciano@hotmail.com
 
+<a href="https://app.daily.dev/willmarciano"><img src="https://api.daily.dev/devcards/25ea7edb97d64df2abf040a8c620db53.png?r=0u8" width="400" alt="Willian Marciano's Dev Card"/></a>
+
 ##
 
 <div align="center">
