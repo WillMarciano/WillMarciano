@@ -1,22 +1,11 @@
 ## 🖖Bem Vindo, Sou Willian Marciano 👽
-
-
-
+- 🔭 Desenvolvedor Back-end </br>
+- 📫 Contato através do E-mail: willian_marciano@hotmail.com
 ##                       
-<table border=0>
- <tr>
-  <td>
-  <a href="https://app.daily.dev/willmarciano"><img src="https://api.daily.dev/devcards/25ea7edb97d64df2abf040a8c620db53.png?r=0u8" width="200" alt="Willian Marciano's Dev Card"/></a>
-  </td>
-  <td>
-   - 🔭 Desenvolvedor Back-end </br>
-   - 📫 Contato através do E-mail: willian_marciano@hotmail.com
-  </td>
- </tr>
-</table>
+
 
 <div align="center">
-
+  <a href="https://app.daily.dev/willmarciano"><img src="https://api.daily.dev/devcards/25ea7edb97d64df2abf040a8c620db53.png?r=0u8" width="200" alt="Willian Marciano's Dev Card"/></a>
 <a href="https://github.com/willmarciano">
 <img height="200em" src="https://github-readme-stats.vercel.app/api?username=willmarciano&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
 <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=willmarciano&layout=compact&langs_count=7&theme=chartreuse-dark"/>
