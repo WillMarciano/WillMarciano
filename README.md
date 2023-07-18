@@ -11,8 +11,8 @@
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=willmarciano&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=willmarciano&layout=compact&langs_count=7&theme=chartreuse-dark"/>
 </div>
-  
- ![Snake animation](https://github.com/willmarciano/willmarciano/blob/output/github-contribution-grid-snake.svg)
+
+ ![snake gif](https://github.com/willmarciano/willmarciano/blob/output/github-contribution-grid-snake.svg)
 
  ##
  ### Ferramentas e Tecnologias
