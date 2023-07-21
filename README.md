@@ -12,7 +12,6 @@
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=willmarciano&layout=compact&langs_count=7&theme=chartreuse-dark"/>
 </div>
 
- ![snake gif](https://github.com/willmarciano/willmarciano/blob/output/github-contribution-grid-snake.svg)
 
  ##
  ### Ferramentas e Tecnologias
