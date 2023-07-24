@@ -7,12 +7,6 @@
 <div>
 <a href="https://app.daily.dev/willmarciano"><img src="https://api.daily.dev/devcards/25ea7edb97d64df2abf040a8c620db53.png?r=0u8" width="300" alt="Willian Marciano's Dev Card"/></a></br>
 
-<a href="https://github.com/willmarciano">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=willmarciano&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=willmarciano&layout=compact&langs_count=7&theme=chartreuse-dark"/>
-</div>
-
- ![Snake animation](https://github.com/willmarciano/willmarciano/blob/output/github-contribution-grid-snake.svg)
 
  ##
  ### Ferramentas e Tecnologias
