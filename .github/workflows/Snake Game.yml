@@ -1,0 +1,7 @@
+- name: Snake Game
+- uses: Platane/snk@v3
+  with:
+    github_user_name: WillMarciano
+    outputs: dist/github-snake.svg
+  env:
+    GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
