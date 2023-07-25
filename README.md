@@ -9,8 +9,11 @@
 </div>
 
 <div>
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=WillMarciano&show_icons=true&theme=radical" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WillMarciano&layout=compact&theme=radical"  />
+    <a href="https://github.com/WillMarciano">
+        <img height="180em"
+            src="https://github-readme-stats.vercel.app/api?username=WillMarciano&show_icons=true&theme=radical&include_all_commits=true&count_private=true" />
+        <img height="180em"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=WillMarciano&layout=compact&langs_count=8&theme=radical" />
 </div>
 
 <!--****[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MarquesRick&layout=compact)](https://github.com/MarquesRick/github-readme-stats) -->
