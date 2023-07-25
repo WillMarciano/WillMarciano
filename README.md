@@ -13,16 +13,8 @@
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WillMarciano&layout=compact&theme=radical"  />
 </div>
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"
-  />
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-</picture>
+<!--****[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MarquesRick&layout=compact)](https://github.com/MarquesRick/github-readme-stats) -->
+![Snake animation](https://raw.githubusercontent.com/WillMarciano/WillMarciano/output/github-contribution-grid-snake.svg)
 
  ##
  ### Ferramentas e Tecnologias
