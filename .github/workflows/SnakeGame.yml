@@ -1,36 +1,46 @@
-# This is a basic workflow to help you get started with Actions
+# Nome da Actions:  
+name: Snake Game
 
-name: CI
-
-# Controls when the workflow will run
+# Controlador do tempo que sera feito a atualização dos arquivos.
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  schedule:
+      # Será atualizado a cada 5 horas.
+    - cron: "0 */5 * * *"
 
-  # Allows you to run this workflow manually from the Actions tab
+# Permite executar na na lista de Actions (utilizado para testes de build).
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# Regras
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
+      - uses: actions/checkout@v2
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    # Repositorio que será utilizado para gerar os arquivos.
+      - uses: Platane/snk@master
+        id: snake-gif
+        with:
+          # github user name to read the contribution graph from (**required**)
+          # using action context var `github.repository_owner` or specified user
+          github_user_name: ${{ github.repository_owner }}
+
+          # list of files to generate.
+          # one file per line. Each output can be customized with options as query string.
+          #
+          #  supported options:
+          #  - palette:     A preset of color, one of [github, github-dark, github-light]
+          #  - color_snake: Color of the snake
+          #  - color_dots:  Coma separated list of dots color.
+          #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
+          #                 Exactly 5 colors are expected.
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+    env:
+      # a github token is required to fetch the contribution calendar from github API
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
