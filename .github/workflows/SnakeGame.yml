@@ -1,46 +1,31 @@
-# Nome da Actions:  
-name: Snake Game
+name: "generate-snake-game-from-github-contribution-grid"
+description: "Generates a snake game from a github user contributions grid. Output the animation as gif or svg"
+author: "platane"
 
-# Controlador do tempo que sera feito a atualização dos arquivos.
-on:
-  schedule:
-      # Será atualizado a cada 5 horas.
-    - cron: "0 */5 * * *"
+runs:
+  using: docker
+  image: docker://platane/snk@sha256:753878055e52fbbaf3148fdac4590e396f97581f1dc4c1f861701add7a1dc1b5
 
-# Permite executar na na lista de Actions (utilizado para testes de build).
-  workflow_dispatch:
+inputs:
+  github_user_name: WillMarciano
+    description: "WillMarciano"
+    required: true
+  outputs:
+    required: false
+    default: null
+    description: |
+      list of files to generate.
+      one file per line. Each output can be customized with options as query string.
 
-# Regras
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
+       supported query string options:
 
-    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
-      - uses: actions/checkout@v2
-
-    # Repositorio que será utilizado para gerar os arquivos.
-      - uses: Platane/snk@master
-        id: snake-gif
-        with:
-          # github user name to read the contribution graph from (**required**)
-          # using action context var `github.repository_owner` or specified user
-          github_user_name: ${{ github.repository_owner }}
-
-          # list of files to generate.
-          # one file per line. Each output can be customized with options as query string.
-          #
-          #  supported options:
-          #  - palette:     A preset of color, one of [github, github-dark, github-light]
-          #  - color_snake: Color of the snake
-          #  - color_dots:  Coma separated list of dots color.
-          #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
-          #                 Exactly 5 colors are expected.
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-
-    env:
-      # a github token is required to fetch the contribution calendar from github API
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - palette:      A preset of color, one of [github, github-dark, github-light]
+      - color_snake:  Color of the snake
+      - color_dots:   Coma separated list of dots color. 
+                      The first one is 0 contribution, then it goes from the low contribution to the highest.
+                      Exactly 5 colors are expected.
+      example:
+        outputs: |
+          dark.svg?palette=github-dark&color_snake=blue
+          light.svg?color_snake=#7845ab
+          ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
