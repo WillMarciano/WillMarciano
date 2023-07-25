@@ -5,15 +5,13 @@
 ##                       
 
 <div>
-<a href="https://app.daily.dev/willmarciano"><img src="https://api.daily.dev/devcards/25ea7edb97d64df2abf040a8c620db53.png?r=0u8" width="300" alt="Willian Marciano's Dev Card"/></a></br>
+<a href="https://app.daily.dev/willmarciano"><img src="https://api.daily.dev/devcards/25ea7edb97d64df2abf040a8c620db53.png?r=0u8" width="280" alt="Willian Marciano's Dev Card"/></a></br>
 </div>
 
 <div>
- <a href="https://github.com/WillMarciano>
- <img src="180em" src="https://github-readme-stats.vercel.app/api?username=WillMarciano&show_icons=true&theme=radical" /> 
-</div>
-
-
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=WillMarciano&show_icons=true&theme=radical" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WillMarciano&layout=compact&theme=radical"  />
+</div><br>
 
  ##
  ### Ferramentas e Tecnologias
