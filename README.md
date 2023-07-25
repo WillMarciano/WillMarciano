@@ -11,7 +11,13 @@
 <div>
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=WillMarciano&show_icons=true&theme=radical" />
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WillMarciano&layout=compact&theme=radical"  />
-</div><br>
+</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
 
  ##
  ### Ferramentas e Tecnologias
