@@ -20,7 +20,7 @@
 ![Snake animation](https://raw.githubusercontent.com/WillMarciano/WillMarciano/output/github-contribution-grid-snake.svg)
 
  ##
- ### Ferramentas e Tecnologias
+ ### Skills
  <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" height="40" />  
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="40" height="40"/>
