@@ -36,6 +36,7 @@ Este guia contém os comandos personalizados configurados para a IA em formato u
 | **`Validar_mensageria`** | Verifica padrões de integração, sagas, transações em banco e cancelamentos. | Integração distribuída e eventos. | `Validar_mensageria no #Handler.ext` |
 | **`Revisar_contrato`** | Valida Swagger/OpenAPI, DTOs e mapeamento de status HTTP. | Liberação de APIs para consumidores. | `Revisar_contrato da rota #Controller.ext` |
 | **`Gerar_diagrama`** | Mapeia o fluxo do código e gera um Sequence Diagram Mermaid blindado. | Documentação viva para fluxos complexos. | `Gerar_diagrama do fluxo de pagamento` |
+| **`Discovery_completo`** | Realiza engenharia reversa total em sistemas sem documentação. Analisa UI, Backend, Dependências e Infra para explicar o negócio e os fluxos. | Assunção de sistemas legados ou projetos sem handover. | `Discovery_completo do projeto` |
 
 ------------
 
