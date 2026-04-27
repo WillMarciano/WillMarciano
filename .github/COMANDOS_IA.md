@@ -25,6 +25,7 @@ Este guia contém os comandos personalizados configurados para a IA em formato u
 | **`Gerar_teste`** | Cria suíte de testes unitários usando o framework primário definido no padrão AAA. | Escrita de lógica de negócio e TDD. | `Gerar_teste para a classe #Servico.ext` |
 | **`Map_dto`** | Gera código de mapeamento blindando os Modelos de Domínio para não vazarem na API. | Integração entre Core e Presentation. | `Map_dto entre #Modelo e #Response` |
 | **`Refactor_this`** | Procura code smells e aplica a regra do escoteiro (limpar o que achar sujo). | Refatorando código legado ou sujo. | `Refactor_this selecionando o método` |
+| **`Tunar_performance`** | Atua como DBA e Engenheiro de Performance. Caça gargalos de memória, problemas de N+1 no ORM, falta de paginação e sugere otimizações extremas. | Otimização de rotas lentas ou queries pesadas de relatórios. | `Tunar_performance neste repositório` |
 
 ------------
 
