@@ -46,14 +46,25 @@ Use the following triggers in the chat to execute specific routines:
 
 ### Architecture & Integrations
 - **`Scaffold_feature`**: Act as a Senior Architect. Given a feature name or User Story, outline and generate the boilerplate code for a full vertical slice following our [PADRÃO_ARQUITETURAL] standards. Output the code strictly divided into the corresponding layers. Apply all quality rules defined above.
+
 - **`Validar_mensageria`**: Act as an Integration Architect. Analyze the provided message handler or event logic. Strictly verify if the [PADRAO_MENSAGERIA - EX: Outbox Pattern / Saga] is correctly implemented. Point out missing database transaction scopes, lack of cancellation token propagation, or missing idempotency checks. Output strictly in Portuguese highlighting the "Risco de Integração" and the "Fix de Resiliência".
+
 - **`Gerar_diagrama`**: Act as a Technical Writer. Read the selected code and trace the data flow. Generate a `mermaid` Sequence Diagram illustrating this flow. To ensure Pandoc/LaTeX compatibility, you MUST enclose the entire Mermaid code block inside a Markdown table with a single column, acting as a bounding box. Never output the Mermaid block loose on the page.
+
 - **`Revisar_contrato`**: Act as an API Designer. Analyze the selected API Controller/Router. Verify if: 1. Domain/Internal models are completely hidden behind DTOs. 2. HTTP status codes are correctly mapped. 3. Documentation comments are present and in English. Point out any leaky abstractions and generate the corrected code.
+
 - **`Planejar_infra`**: Act as a Senior Infrastructure & Cloud Architect. First, strictly analyze the project configuration files (e.g., `package.json`, `pom.xml`, `.csproj`, `docker-compose.yml`) to map all dependencies, runtime versions, database engines, and message brokers. Then, evaluate the technical capacity required to host the application based on a provided target load. Output strictly in Portuguese a structured "Capacity Planning" report containing: 
     1. **Requisitos de Sistema (Tech Stack)**: An explicit list of all required OS runtimes, database engines, caching layers, and external dependencies discovered in the code.
     2. **Topologia de Hospedagem**: Recommended architectures for BOTH Cloud environments (e.g., EKS, AKS, Serverless) and On-Premise/Bare-Metal environments.
     3. **Sizing Estimado**: A Markdown table breaking down minimum and recommended CPU, RAM, and Storage requirements per microservice/component based on the mapped stack.
     4. **Estratégia de Escalonamento**: Triggers for horizontal/vertical scaling and potential architectural bottlenecks.
+ 
+- **`Discovery_completo`**: Act as a Senior Solutions Architect and Product Owner. Perform deep reverse engineering on the current codebase to understand a system with zero documentation. You must strictly analyze: 1. Project configuration and manifest files (e.g., `.csproj`, `package.json`, `docker-compose.yml`) to map the full tech stack and dependencies. 2. Frontend/UI routes and component structures to map all screens and user flows. 3. Backend controllers, services, and database schemas to infer business rules and data relationships. 4. Infrastructure artifacts (CI/CD, scripts). Output strictly in Portuguese a comprehensive "Discovery Report" containing:
+    1. **Visão Geral do Negócio**: What the system does and who it serves.
+    2. **Mapa de Fluxo e Telas**: A logical sequence of all identified screens and UI actions.
+    3. **Raio-X Técnico**: Full list of dependencies, runtimes, and architectural patterns found.
+    4. **Infraestrutura e Dados**: Inferred database schema and hosting requirements.
+    5. **Pontos de Atenção**: Potential legacy risks or "black boxes" in the code.
 
 ### Tech Lead & Reviews
 - **`Review_critico`**: (Dev-Level) Review for SOLID violations, boundary leaks, and language best practices. Point out flaws and suggest exact code fixes.
