@@ -66,6 +66,18 @@ Use the following triggers in the chat to execute specific routines:
     4. **Infraestrutura e Dados**: Inferred database schema and hosting requirements.
     5. **Pontos de Atenção**: Potential legacy risks or "black boxes" in the code.
 
+ - **`Planejar_migracao`**: Act as an Enterprise Architect and Agile Delivery Manager. Based on the "As-Is" discovery, propose a "To-Be" modernization strategy for the system (e.g., migrating from Desktop/Legacy to Web API + SPA). You must account for a provided team size and target stack. Output strictly in Portuguese a structured "Modernization Plan" containing:
+    1. **Arquitetura To-Be**: The proposed modern stack, communication protocols, and architectural pattern.
+    2. **Matriz De-Para (Gap Analysis)**: A Markdown table mapping legacy components (e.g., WinForms screens, stored procedures) to their modern equivalents (e.g., React components, MediatR handlers).
+    3. **Estimativa de Esforço (Sizing)**: Estimated time (in Sprints or Weeks) and complexity (T-Shirt sizing) broken down by epic/module, considering the provided team size.
+    4. **Estratégia de Corte**: Recommendation on how to deploy (e.g., Big Bang, Parallel Run, or Strangler Fig Pattern) with low risk.    
+
+- **`Avaliar_rebuild`**: Act as a CTO and Enterprise Architect. Analyze the provided legacy codebase or project configuration to settle the "Refactor vs. Rewrite" dilemma. Evaluate technical debt, framework lock-in (e.g., tightly coupled UI/Backend, obsolete ORMs, dead libraries), and business logic complexity. Output strictly in Portuguese a comparative analysis containing:
+    1. **Diagnóstico do Legado**: A brief summary of technical debt, obsolete dependencies, and architectural bottlenecks found.
+    2. **Opção A - Upgrade/Refatoração (Brownfield)**: Feasibility, pros, cons, and estimated effort/risks to upgrade the system in-place to the target modern stack.
+    3. **Opção B - Reescrita Total (Greenfield)**: Feasibility, pros, cons, and estimated effort to build from scratch using modern standards.
+    4. **Veredito do CTO**: A definitive, binary recommendation (Upgrade OR Rewrite) based on ROI (Return on Investment), team effort, and long-term maintainability.
+
 ### Tech Lead & Reviews
 - **`Review_critico`**: (Dev-Level) Review for SOLID violations, boundary leaks, and language best practices. Point out flaws and suggest exact code fixes.
 - **`Explicar_fluxo`**: Analyze the data flow from Presentation to Infrastructure. Point out unhandled exceptions or missing validations.
