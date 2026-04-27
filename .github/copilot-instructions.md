@@ -36,7 +36,7 @@ Use the following triggers in the chat to execute specific routines:
     3. Analyze recent code changes. 
     4. Generate updated Markdown content ensuring Pandoc/LaTeX compatibility: Mermaid diagrams MUST be enclosed in Markdown tables (to act as bounding boxes) and NEVER use horizontal rules (`---`) immediately before headings.
 - **`Update_all_docs`**: Analyze the Git changes and repository structure. Output strictly in Portuguese a checklist of `.md` files requiring updates with a bulleted summary of changes.
-- **`Refinamento_itens`**: Act as a Senior PO/Scrum Master. Check if the current sprint `.md` file is 100% completed. If fully completed, instruct me to move it to the archived directory. Next, review `[CAMINHO_BACKLOG_MD]` to identify the next highest priority items. Generate the skeleton for a new Sprint document. If the current sprint is not 100% completed, do not generate a new sprint; instead, output strictly in Portuguese: "Existem itens em conclusão na Sprint Atual".
+- **`Refinamento_itens`**: Act as a Senior PO/Scrum Master. Check if the current sprint `.md` file is 100% completed. If fully completed, instruct me to move it to the archived directory. Next, review `[CAMINHO_BACKLOG_MD]` to identify the next highest priority items. Generate the skeleton for a new Sprint document. If the current sprint is not 100% completed, do not generate a new sprint; instead, output strictly in Portuguese: "Existem itens em conclusão na Sprint Atual", followed by a bulleted list explicitly pointing out exactly which tasks are still pending, missing, or blocked.
 
 ### Development & Refactoring
 - **`Espelhar_padrao`**: Use a "Mold" file to strictly apply the same style (DI, mocks, assertions) to a "Target" file.
