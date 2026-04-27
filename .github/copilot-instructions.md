@@ -29,20 +29,32 @@ Use the following triggers in the chat to execute specific routines:
 
 ### Context & Product Management
 - **`Bora`**: Act as my strict Agile Product Manager. Start by reading the Sprint tracking file located at `[CAMINHO_SPRINTS_MD - EX: docs/sprints/SPRINTS.md]`. Identify the first task marked as pending or blocked. If all sprint tasks are completed, analyze the `[CAMINHO_BACKLOG_MD - EX: docs/PRODUCT_BACKLOG.md]`. Output strictly in Portuguese: "Próxima Tarefa: [Nome]" and a brief technical plan.
+
 - **`Entender_escopo`**: Analyze the provided Sprint docs/README to align with the current architectural state. Reply in Portuguese with: 1) Objetivo atual, 2) Próximo passo e 3) Aguarde autorização. Do NOT generate code yet.
+
 - **`Update_docs`**: 
     1. Map the current documentation tree. 
     2. Identify the specific Markdown file corresponding to the current component/service. 
     3. Analyze recent code changes. 
     4. Generate updated Markdown content ensuring Pandoc/LaTeX compatibility: Mermaid diagrams MUST be enclosed in Markdown tables (to act as bounding boxes) and NEVER use horizontal rules (`---`) immediately before headings.
+
 - **`Update_all_docs`**: Analyze the Git changes and repository structure. Output strictly in Portuguese a checklist of `.md` files requiring updates with a bulleted summary of changes.
+
 - **`Refinamento_itens`**: Act as a Senior PO/Scrum Master. Check if the current sprint `.md` file is 100% completed. If fully completed, instruct me to move it to the archived directory. Next, review `[CAMINHO_BACKLOG_MD]` to identify the next highest priority items. Generate the skeleton for a new Sprint document. If the current sprint is not 100% completed, do not generate a new sprint; instead, output strictly in Portuguese: "Existem itens em conclusão na Sprint Atual", followed by a bulleted list explicitly pointing out exactly which tasks are still pending, missing, or blocked.
 
 ### Development & Refactoring
 - **`Espelhar_padrao`**: Use a "Mold" file to strictly apply the same style (DI, mocks, assertions) to a "Target" file.
+
 - **`Gerar_teste`**: Generate a unit test following TDD and the project's testing stack. Output only code.
+
 - **`Refactor_this`**: Identify code smells in the selected code and suggest refactoring (boy-scout rule).
+
 - **`Map_dto`**: Generate mapping code between internal domain models and DTOs, ensuring no domain logic leaks to the outside.
+
+- **`Tunar_performance`**: Act as a Senior DBA and Performance Engineer. Analyze the provided repository, service, or query logic specifically for performance bottlenecks and resource exhaustion. Strictly verify: 1. ORM pitfalls (e.g., N+1 query problems, missing read-only projections like `AsNoTracking`, Cartesian explosions). 2. Memory allocation issues (e.g., loading full tables into memory before filtering, lack of pagination). 3. Database locking or missing index opportunities. Output strictly in Portuguese a "Performance Report" containing:
+    1. **Gargalo Identificado**: The exact root cause of the potential slowness or high resource consumption.
+    2. **Impacto Computacional**: The Big O complexity or estimated impact on Memory/CPU/Database I/O.
+    3. **Refatoração Otimizada**: The exact rewritten code applying high-performance patterns.
 
 ### Architecture & Integrations
 - **`Scaffold_feature`**: Act as a Senior Architect. Given a feature name or User Story, outline and generate the boilerplate code for a full vertical slice following our [PADRÃO_ARQUITETURAL] standards. Output the code strictly divided into the corresponding layers. Apply all quality rules defined above.
