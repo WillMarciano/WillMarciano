@@ -37,6 +37,8 @@ Este guia contém os comandos personalizados configurados para a IA em formato u
 | **`Revisar_contrato`** | Valida Swagger/OpenAPI, DTOs e mapeamento de status HTTP. | Liberação de APIs para consumidores. | `Revisar_contrato da rota #Controller.ext` |
 | **`Gerar_diagrama`** | Mapeia o fluxo do código e gera um Sequence Diagram Mermaid blindado. | Documentação viva para fluxos complexos. | `Gerar_diagrama do fluxo de pagamento` |
 | **`Discovery_completo`** | Realiza engenharia reversa total em sistemas sem documentação. Analisa UI, Backend, Dependências e Infra para explicar o negócio e os fluxos. | Assunção de sistemas legados ou projetos sem handover. | `Discovery_completo do projeto` |
+| **`Planejar_migracao`** | Cria a arquitetura *To-Be* de um sistema legado. Gera matriz De-Para, estratégia de corte (ex: Strangler Pattern) e estima tempo em Sprints/Semanas com base no tamanho do time. | Planejamento de refatoração ou reescrita total de aplicações antigas. | `Planejar_migracao para .NET Core e Angular com 3 Devs Sêniors` |
+| **`Avaliar_rebuild`** | Resolve o dilema "Refatorar vs Reescrever". Avalia o débito técnico do legado e compara o custo/benefício de atualizar a base atual vs criar do zero. | Tomada de decisão orçamentária e técnica em sistemas muito defasados. | `Avaliar_rebuild deste app em .NET Framework 4` |
 
 ------------
 
